@@ -1,70 +1,118 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { DiPython, DiGit, DiReact } from "react-icons/di";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
+  SiFastapi,
+  SiMysql,
   SiPostgresql,
+  SiGooglecloud,
+  SiDocker,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiC,
+  SiCsharp,
+  SiAmazonaws,
+  SiMicrosoftazure,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
+  const groupStyle = {
+    marginTop: "30px",
+    marginBottom: "10px",
+    color: "#9b59b6",
+    fontWeight: "bold",
+    fontSize: "1.2rem",
+  };
+
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-    </Row>
+    <>
+      {/* Machine Learning & Data Science */}
+      <div style={groupStyle}>🧠 Machine Learning & Data Science</div>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="Python">
+          <DiPython />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Pandas">
+          <SiPandas />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="NumPy">
+          <SiNumpy />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Scikit-learn">
+          <SiScikitlearn />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="TensorFlow">
+          <SiTensorflow />
+        </Col>
+      </Row>
+
+      {/* Web Development */}
+      <div style={groupStyle}>🌐 Web Development</div>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="React.js">
+          <DiReact />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="JavaScript">
+          <SiJavascript />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="HTML5">
+          <SiHtml5 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="CSS3">
+          <SiCss3 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="FastAPI">
+          <SiFastapi />
+        </Col>
+      </Row>
+
+      {/* Databases */}
+      <div style={groupStyle}>🗄️ Databases</div>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="MySQL">
+          <SiMysql />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
+          <SiPostgresql />
+        </Col>
+      </Row>
+
+      {/* Cloud & DevOps */}
+      <div style={groupStyle}>☁️ Cloud & DevOps</div>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="Google Cloud">
+          <SiGooglecloud />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Amazon AWS">
+          <SiAmazonaws />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Microsoft Azure">
+          <SiMicrosoftazure />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="Docker">
+          <SiDocker />
+        </Col>
+      </Row>
+
+      {/* Other Tools */}
+      <div style={groupStyle}>🛠️ Other Tools</div>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={2} className="tech-icons" title="Git">
+          <DiGit />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="C">
+          <SiC />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" title="C#">
+          <SiCsharp />
+        </Col>
+      </Row>
+    </>
   );
 }
 
